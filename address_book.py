@@ -1,8 +1,13 @@
+"""
+@file address_book.py
+@brief This file contains functions for managing contacts in an address book.
+"""
+
 import csv
 
-# Функция для загрузки контактов из CSV файла
-# @param filename Имя CSV файла.
-# @return Список контактов.
+# @brief Loads contacts from a CSV file.
+# @param filename The name of the CSV file to load contacts from.
+# @return A list of contacts.
 def load_contacts(filename="contacts.csv"):
     contacts = []
     try:
@@ -11,12 +16,12 @@ def load_contacts(filename="contacts.csv"):
             for row in reader:
                 contacts.append(row)
     except FileNotFoundError:
-        pass  # Если файл не найден, возвращаем пустой список
+        pass  # Return an empty list if the file does not exist.
     return contacts
 
-# Функция для сохранения контактов в CSV файл
-# @param contacts Список контактов для сохранения.
-# @param filename Имя CSV файла.
+# @brief Saves contacts to a CSV file.
+# @param contacts The list of contacts to save.
+# @param filename The name of the CSV file to save contacts to.
 def save_contacts(contacts, filename="contacts.csv"):
     with open(filename, mode="w", newline="") as file:
         fieldnames = ["name", "phone", "email"]
@@ -24,28 +29,28 @@ def save_contacts(contacts, filename="contacts.csv"):
         writer.writeheader()
         writer.writerows(contacts)
 
-# Функция для добавления нового контакта
-# @param contacts Список контактов.
-# @param name Имя контакта.
-# @param phone Номер телефона контакта.
-# @param email Электронная почта контакта.
+# @brief Adds a new contact to the list.
+# @param contacts The list of contacts.
+# @param name The name of the contact.
+# @param phone The phone number of the contact.
+# @param email The email address of the contact.
 def add_contact(contacts, name, phone, email):
     contacts.append({"name": name, "phone": phone, "email": email})
     save_contacts(contacts)
 
-# Функция для удаления контакта
-# @param contacts Список контактов.
-# @param index Индекс контакта для удаления.
+# @brief Deletes a contact from the list by index.
+# @param contacts The list of contacts.
+# @param index The index of the contact to delete.
 def delete_contact(contacts, index):
     del contacts[index]
     save_contacts(contacts)
 
-# Функция для редактирования контакта
-# @param contacts Список контактов.
-# @param index Индекс контакта для редактирования.
-# @param name Новое имя контакта.
-# @param phone Новый номер телефона контакта.
-# @param email Новая электронная почта контакта.
+# @brief Edits a contact in the list.
+# @param contacts The list of contacts.
+# @param index The index of the contact to edit.
+# @param name The new name of the contact.
+# @param phone The new phone number of the contact.
+# @param email The new email address of the contact.
 def edit_contact(contacts, index, name, phone, email):
     contacts[index] = {"name": name, "phone": phone, "email": email}
     save_contacts(contacts)
