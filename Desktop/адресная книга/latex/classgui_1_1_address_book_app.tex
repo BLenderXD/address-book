@@ -1,0 +1,79 @@
+\doxysection{gui.\+Address\+Book\+App Class Reference}
+\hypertarget{classgui_1_1_address_book_app}{}\label{classgui_1_1_address_book_app}\index{gui.AddressBookApp@{gui.AddressBookApp}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgui_1_1_address_book_app_af0449bbf6243dac0aafc1a35d062f151}\label{classgui_1_1_address_book_app_af0449bbf6243dac0aafc1a35d062f151} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, root)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a14111923f2065cb3fbc5c0b60822e742}\label{classgui_1_1_address_book_app_a14111923f2065cb3fbc5c0b60822e742} 
+{\bfseries create\+\_\+widgets} (self)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a00122e5c914dd4d660662e21c22cde38}\label{classgui_1_1_address_book_app_a00122e5c914dd4d660662e21c22cde38} 
+{\bfseries update\+\_\+contact\+\_\+list} (self)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a1b0cc259735473983fc65043b5d2f8ed}\label{classgui_1_1_address_book_app_a1b0cc259735473983fc65043b5d2f8ed} 
+{\bfseries add\+\_\+contact} (self)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_acca886a8edf5a8c4c6f85417e475784a}\label{classgui_1_1_address_book_app_acca886a8edf5a8c4c6f85417e475784a} 
+{\bfseries edit\+\_\+contact} (self)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_adc465fb3c4fdc87c92a8bfb16ca118c0}\label{classgui_1_1_address_book_app_adc465fb3c4fdc87c92a8bfb16ca118c0} 
+{\bfseries delete\+\_\+contact} (self)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_ab6fd4202cc97a7046029d83a14f9f075}\label{classgui_1_1_address_book_app_ab6fd4202cc97a7046029d83a14f9f075} 
+{\bfseries clear\+\_\+fields} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a4c5db4c18547adb854f89d5b4e97f953}\label{classgui_1_1_address_book_app_a4c5db4c18547adb854f89d5b4e97f953} 
+{\bfseries root} = root
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a823b22fe97b3c593ee4826c6b1a980a4}\label{classgui_1_1_address_book_app_a823b22fe97b3c593ee4826c6b1a980a4} 
+{\bfseries contacts} = load\+\_\+contacts()
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a4c9cc83e1dde5663e417c9653ab57dde}\label{classgui_1_1_address_book_app_a4c9cc83e1dde5663e417c9653ab57dde} 
+{\bfseries title\+\_\+label} = tk.\+Label(self.\+root, text="{}Address Book"{}, font=("{}Arial"{}, 20))
+\item 
+\Hypertarget{classgui_1_1_address_book_app_aeaeac922e4ff54487cca3aba1e42dba6}\label{classgui_1_1_address_book_app_aeaeac922e4ff54487cca3aba1e42dba6} 
+{\bfseries tree} = ttk.\+Treeview(self.\+root, columns=("{}Name"{}, "{}Phone"{}, "{}Email"{}), show="{}headings"{}, height=10)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a41a1e8854255fb5e531b0f315a13fefb}\label{classgui_1_1_address_book_app_a41a1e8854255fb5e531b0f315a13fefb} 
+{\bfseries name\+\_\+label} = tk.\+Label(self.\+root, text="{}Name\+:"{})
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a5a3ebc3bfb0cee00b885bd3bd8ed575d}\label{classgui_1_1_address_book_app_a5a3ebc3bfb0cee00b885bd3bd8ed575d} 
+{\bfseries name\+\_\+entry} = tk.\+Entry(self.\+root)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a3a263fc8fdcd97f4c5bf984fbc6de701}\label{classgui_1_1_address_book_app_a3a263fc8fdcd97f4c5bf984fbc6de701} 
+{\bfseries phone\+\_\+label} = tk.\+Label(self.\+root, text="{}Phone\+:"{})
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a3608b366a5095f3731a769009333fc00}\label{classgui_1_1_address_book_app_a3608b366a5095f3731a769009333fc00} 
+{\bfseries phone\+\_\+entry} = tk.\+Entry(self.\+root)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_aedc4e457113ddebac2dd045e2f3aa182}\label{classgui_1_1_address_book_app_aedc4e457113ddebac2dd045e2f3aa182} 
+{\bfseries email\+\_\+label} = tk.\+Label(self.\+root, text="{}Email\+:"{})
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a4765639a142f9bfaf521b4219b4c11dc}\label{classgui_1_1_address_book_app_a4765639a142f9bfaf521b4219b4c11dc} 
+{\bfseries email\+\_\+entry} = tk.\+Entry(self.\+root)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a4cd83f991935940ac834bb5068d0bb54}\label{classgui_1_1_address_book_app_a4cd83f991935940ac834bb5068d0bb54} 
+{\bfseries add\+\_\+button} = tk.\+Button(self.\+root, text="{}Add Contact"{}, command=self.\+add\+\_\+contact)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a8dfc5b327ebbf95c66d3e84f3c3296b0}\label{classgui_1_1_address_book_app_a8dfc5b327ebbf95c66d3e84f3c3296b0} 
+{\bfseries edit\+\_\+button} = tk.\+Button(self.\+root, text="{}Edit Contact"{}, command=self.\+edit\+\_\+contact)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a08af776d105112e09df55f398cd5ad6e}\label{classgui_1_1_address_book_app_a08af776d105112e09df55f398cd5ad6e} 
+{\bfseries delete\+\_\+button} = tk.\+Button(self.\+root, text="{}Delete Contact"{}, command=self.\+delete\+\_\+contact)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_abefe6ffe4cc1ed1f3daa831b05062641}\label{classgui_1_1_address_book_app_abefe6ffe4cc1ed1f3daa831b05062641} 
+{\bfseries clear\+\_\+button} = tk.\+Button(self.\+root, text="{}Clear Fields"{}, command=self.\+clear\+\_\+fields)
+\item 
+\Hypertarget{classgui_1_1_address_book_app_a41b2cc6f41e278706423e6b5d11dc5a8}\label{classgui_1_1_address_book_app_a41b2cc6f41e278706423e6b5d11dc5a8} 
+tuple {\bfseries contacts} = (contact\mbox{[}"{}name"{}\mbox{]}, contact\mbox{[}"{}phone"{}\mbox{]}, contact\mbox{[}"{}email"{}\mbox{]}))
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gui.\+py\end{DoxyCompactItemize}
